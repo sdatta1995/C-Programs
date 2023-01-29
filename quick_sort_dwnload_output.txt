@@ -1,0 +1,39 @@
+ 8721096
+ 2781096
+ 2187096
+ 2107896
+ 2106789
+ 
+ 
+ Unsorted Array
+8  7  2  1  0  9  6  
+Pivot: 6
+i: -1
+Before swap ==> i(0),j(2):arr[i](8),arr[j](2)
+After swap ==> i(0),j(2):arr[i](2),arr[j](8)
+Before swap ==> i(1),j(3):arr[i](7),arr[j](1)
+After swap ==> i(1),j(3):arr[i](1),arr[j](7)
+Before swap ==> i(2),j(4):arr[i](8),arr[j](0)
+After swap ==> i(2),j(4):arr[i](0),arr[j](8)
+Final before swap ==> i(3),j(6):arr[i](7),arr[j](6)
+Final after swap ==> i(3),j(6):arr[i](6),arr[j](7)
+Pivot: 0
+i: -1
+Final before swap ==> i(0),j(2):arr[i](2),arr[j](0)
+Final after swap ==> i(0),j(2):arr[i](0),arr[j](2)
+Pivot: 2
+i: 0
+Before swap ==> i(1),j(1):arr[i](1),arr[j](1)
+After swap ==> i(1),j(1):arr[i](1),arr[j](1)
+Final before swap ==> i(2),j(2):arr[i](2),arr[j](2)
+Final after swap ==> i(2),j(2):arr[i](2),arr[j](2)
+Pivot: 7
+i: 3
+Final before swap ==> i(4),j(6):arr[i](8),arr[j](7)
+Final after swap ==> i(4),j(6):arr[i](7),arr[j](8)
+Pivot: 8
+i: 4
+Final before swap ==> i(5),j(6):arr[i](9),arr[j](8)
+Final after swap ==> i(5),j(6):arr[i](8),arr[j](9)
+Sorted array in ascending order: 
+0  1  2  6  7  8  9 

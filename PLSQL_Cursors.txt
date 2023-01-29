@@ -1,0 +1,25 @@
+
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  names varchar2(20) NOT NULL,
+  dept varchar2(20) NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
+
+declare
+    cursor emp is select * from EMPLOYEE;
+    emp_table emp%rowtype;
+begin
+    open emp;
+        loop
+            fetch emp into emp_table;
+            exit when emp%notfound;
+            dbms_output.put_line('the names are: '||emp_table.names);
+        end loop;
+    close emp;
+end;
